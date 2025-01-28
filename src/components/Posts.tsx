@@ -6,14 +6,17 @@ import {
 	Create,
 	SimpleForm,
 	TextInput,
+	ReferenceField,
+	DateField,
 } from 'react-admin';
 
 export const PostList = () => (
 	<List>
 		<Datagrid rowClick="edit">
-			<TextField source="id" />
+			<TextField source="id" label="ID" />
+			<ReferenceField source="userId" reference="users" label="User" />
 			<TextField source="title" />
-			<TextField source="content" />
+			<DateField source="publishedDate" />
 		</Datagrid>
 	</List>
 );
@@ -22,7 +25,7 @@ export const PostEdit = () => (
 	<Edit>
 		<SimpleForm>
 			<TextInput source="title" />
-			<TextInput source="content" multiline rows={5} />
+			<TextInput source="body" multiline rows={5} />
 		</SimpleForm>
 	</Edit>
 );
