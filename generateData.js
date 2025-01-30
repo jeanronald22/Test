@@ -9,6 +9,7 @@ const generateUsers = (count) => {
 			username: faker.internet.displayName(),
 			email: faker.internet.email(),
 			phone: faker.phone.number(),
+			status: faker.helpers.arrayElement(['active', 'disabled']),
 		});
 	}
 	return users;
@@ -24,11 +25,7 @@ const generatePosts = (count, users) => {
 			userId: users[faker.number.int({ min: 0, max: users.length - 1 })]
 				.id,
 			publishedDate: faker.date.past(),
-			status: faker.helpers.arrayElement([
-				'draft',
-				'published',
-				'archived',
-			]),
+			status: faker.helpers.arrayElement(['draft', 'published']),
 		});
 	}
 	return posts;
@@ -36,8 +33,8 @@ const generatePosts = (count, users) => {
 
 // nombre d'utilisateurs et de posts à générer par defaut
 
-const usersCount = 10;
-const postsCount = 20;
+const usersCount = 18;
+const postsCount = 25;
 
 // génération des données
 const users = generateUsers(usersCount);
