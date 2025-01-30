@@ -9,26 +9,6 @@ Avant de pouvoir exécuter ce projet, vous devez avoir installé Node.js et npm.
 -   Node.js >= 16.x de préference la dernière version
 -   npm (inclus avec Node.js)
 
-## Structure du projets
-
-├── node_modules/
-├── public/
-│ └── index.html
-├── src/
-│ ├── App.tsx
-│ ├── components/
-│ │ └── Dashboard.tsx
-│ ├── pages/
-│ │ └── Dashboard.tsx
-| |.....
-│ └── main.tsx
-├── db.json
-├── generateData.js
-├── package.json
-├── server.js
-├── vite.config.ts
-└── .....
-
 ## Installation
 
 1. Clonez ce dépôt sur votre machine locale.
