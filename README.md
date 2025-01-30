@@ -1,8 +1,8 @@
 # Test Front
 
 Ce projet est une application front-end développée dans le cadre de l'obtention d'un stage . L'objectif principal de ce projet est de tester et de simuler le comportement d'une interface utilisateur dans un environnement fictif en utilisant des technologies modernes telles que React admin et Node.js json-server.
-[](./dark.png)
-[](./ligth.png)
+[dashboard dark](./dark.png)
+[dashboard light](./ligth.png)
 
 ## Prérequis
 
